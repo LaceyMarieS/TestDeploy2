@@ -198,7 +198,7 @@ export default function CreateJobForm({ jobs, setJobs, filter }) {
         <Alert severity='error' sx={{marginTop: 5}}> 
           <ul>
               {errors.map((error) => (
-                  <li>{error}</li>
+                  <li key={error.id}>{error}</li>
               ))}
           </ul>
         </Alert>
